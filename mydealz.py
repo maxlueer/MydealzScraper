@@ -37,7 +37,7 @@ from bs4 import BeautifulSoup as bs
 from contextlib import suppress
 from colorama import init, Fore, Back, Style
 from emoji import emojize
-from pyshorteners import Shortener
+#from pyshorteners import Shortener
 from threading import Thread
 
 # Emoji definitions
@@ -49,7 +49,7 @@ wish = emojize(":star:", use_aliases=True)
 # Basic stuff
 os.chdir(os.path.dirname(os.path.realpath(__file__)))
 init(autoreset=True) # Colorama
-shortener = Shortener("Isgd")
+#shortener = Shortener("Isgd")
 header = {"user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36 OPR/55.0.2994.61"}
 
 # Get settings from file
@@ -100,12 +100,12 @@ def get_wanted():
 
 # Link processing
 def process_link(link):
-    try:
-        proc_link = shortener.short(link)
-    except:
-        print("Shortener-Service nicht erreichbar. Verwende vollen Link.")
-        proc_link = link
-    return proc_link
+    #try:
+        #proc_link = shortener.short(link)
+    #except:
+    #   print("Shortener-Service nicht erreichbar. Verwende vollen Link.")
+        #proc_link = link
+    return link
     
 # Telegram bot
 bot = telebot.TeleBot(tg_token)

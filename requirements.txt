@@ -3,3 +3,4 @@ colorama
 emoji
 lxml
 pyshorteners
+pyTelegramBotAPI
