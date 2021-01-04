@@ -2,4 +2,4 @@ bs4
 colorama
 emoji
 lxml
-pyshortener
+pyshorteners
