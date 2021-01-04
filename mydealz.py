@@ -286,13 +286,13 @@ def mydealz_scraper():
             time.sleep(60)
         
         # Hottest today scraper
-        scrape_hottest()
+        #scrape_hottest()
         
         # Hot deals scraper
-        scrape("https://www.mydealz.de/hot?page=1", hot)
+        #scrape("https://www.mydealz.de/hot?page=1", hot)
         
         # Freebie scraper
-        scrape("https://www.mydealz.de/gruppe/freebies-new?page=1", free)
+        #scrape("https://www.mydealz.de/gruppe/freebies-new?page=1", free)
         
         debug("Now sleeping until next cycle")
         time.sleep(sleep_time)
