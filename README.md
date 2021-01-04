@@ -10,6 +10,10 @@ Install the following libraries to use this script:
 * pyshortener
 * maybe more that are not part of Python by default
 
+```bash
+  $ sudo python3 -m pip install -r requirements.txt
+```
+
 ## Usage
 You can control the following settings in `settings.txt`:
 * debug_mode: Enable/disable debug messages
